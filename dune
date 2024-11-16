@@ -1,0 +1,10 @@
+(library
+  (name C11parser)
+  (modules context declarator parser lexer options)
+  )
+
+(menhir
+  (modules parser))
+
+(ocamllex
+  (modules lexer))
